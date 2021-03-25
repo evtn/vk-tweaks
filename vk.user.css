@@ -1,0 +1,61 @@
+/* ==UserStyle==
+@name           VK Tweaks
+@namespace      qevitta
+@version        0.1.0
+@description    VK Tweaks
+@author         vk.com/qevitta
+@homepageURL    http://github.com/evtn/vk-tweaks
+@updateURL      https://raw.githubusercontent.com/evtn/vk-tweaks/lord/vk.user.css
+@var select ads "Убрать рекламу слева" {"Да*": "none", "Нет": "block"}
+@var select combo "Убрать пункт VK Combo из меню" {"Да*": "none", "Нет": "block"}
+@var select stories "Показывать истории в новостях" {"Да*": "block", "Нет": "none"}
+@var checkbox round-avatars "Форма аватарок" {"Круглые*": "50%", "Скругленные": "30%", "Квадратные": "0"}
+
+
+==/UserStyle== */
+
+@-moz-document domain("vk.com") {
+  #ads_left {
+    display: var(--ads) !important;
+  }
+  #l_combo {
+    display: var(--combo);
+  }
+  /* добавил [dir] после заигрываний ВК с селекторами, не удивляйтесь */
+  .nim-peer .nim-peer--photo .im_grid > img,
+  [dir] .nim-peer .nim-peer--photo .im_grid > img, 
+  .nim-peer .nim-peer--photo > img,
+  [dir] .nim-peer .nim-peer--photo > img,
+  .post_img,
+  [dir] .post_img,
+  .post_field_user_image,
+  [dir] .post_field_user_image,
+  .module_body .people_cell_img,
+  [dir] .module_body .people_cell_img,
+  .group_row_photo, .group_row_img,
+  [dir] .group_row_photo, .group_row_img,
+  .top_profile_img,
+  [dir] .top_profile_img,
+  .page_list_module .thumb,
+  [dir] .page_list_module .thumb,
+  .wall_module .reply_img,
+  [dir] .wall_module .reply_img,
+  .ow_ava.ow_ava_comm,
+  [dir] .ow_ava.ow_ava_comm,
+  .like_tt_image,
+  [dir] .like_tt_image,
+  .voting_tt_image,
+  [dir] .voting_tt_image,
+  .friends_photo_img,
+  [dir] .friends_photo_img,
+  .right_list_img,
+  [dir] .right_list_img,
+  .top_notify_cont .feedback_img,
+  [dir] .top_notify_cont .feedback_img {
+    border-radius: var(--round-avatars);
+  }
+  .feed_submit_shown .stories_feed_wrap,
+  [dir] .feed_submit_shown .stories_feed_wrap {
+    display: var(--stories);
+  }
+}
