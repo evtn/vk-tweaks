@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           VK Tweaks
 @namespace      qevitta
-@version        0.1.1
+@version        0.1.2
 @description    VK Tweaks
 @author         vk.com/qevitta
 @homepageURL    http://github.com/evtn/vk-tweaks
@@ -51,8 +51,15 @@
   .right_list_img,
   [dir] .right_list_img,
   .top_notify_cont .feedback_img,
-  [dir] .top_notify_cont .feedback_img {
+  [dir] .top_notify_cont .feedback_img,
+  [dir] .nim-peer.nim-peer_small .nim-peer--photo > img, 
+  [dir] .nim-peer.nim-peer_small .nim-peer--photo .im_grid > img,
+  [dir] .nim-peer .nim-peer--photo-w,
+  [dir] .nim-peer.nim-peer_smaller .nim-peer--photo > img,
+  [dir] .nim-peer.nim-peer_smaller .nim-peer--photo .im_grid > img,
+  [dir] .TopNavBtn__profileImg {
     border-radius: var(--round-avatars);
+
   }
   .feed_submit_shown .stories_feed_wrap,
   [dir] .feed_submit_shown .stories_feed_wrap {
