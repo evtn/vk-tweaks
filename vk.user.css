@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           VK Tweaks
 @namespace      qevitta
-@version        0.1.0
+@version        0.1.1
 @description    VK Tweaks
 @author         vk.com/qevitta
 @homepageURL    http://github.com/evtn/vk-tweaks
@@ -9,7 +9,7 @@
 @var select ads "Убрать рекламу слева" {"Да*": "none", "Нет": "block"}
 @var select combo "Убрать пункт VK Combo из меню" {"Да*": "none", "Нет": "block"}
 @var select stories "Показывать истории в новостях" {"Да*": "block", "Нет": "none"}
-@var checkbox round-avatars "Форма аватарок" {"Круглые*": "50%", "Скругленные": "30%", "Квадратные": "0"}
+@var select round-avatars "Форма аватарок" {"Круглые*": "50%", "Скругленные": "30%", "Квадратные": "0"}
 
 
 ==/UserStyle== */
