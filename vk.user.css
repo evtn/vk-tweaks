@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           VK Tweaks
 @namespace      qevitta
-@version        0.1.6
+@version        0.1.7
 @description    VK Tweaks
 @author         vk.com/qevitta
 @homepageURL    http://github.com/evtn/vk-tweaks
@@ -11,7 +11,8 @@
 @var select stories "Показывать истории в новостях" {"Да*": "block", "Нет": "none"}
 @var select round-avatars "Форма аватарок" {"Круглые*": "50%", "Скругленные": "30%", "Квадратные": "0"}
 @var text messenger-label "Текст пункта 'Мессенджер' (кавычки убирать не надо)" '"Мессенджер"'
-
+@var select counter-bg "Фон счетчиков в левом меню" {"Стандартный*": "var(--counter_secondary_background)", "Прозрачный": "transparent", "Яркий": "var(--accent)"}
+@var select counter-fg "Текст счетчиков в левом меню" {"Стандартный*": "var(--white)", "Белый": "white", "Яркий": "var(--accent)"}
 ==/UserStyle== */
 
 @-moz-document domain("vk.com") {
@@ -71,5 +72,9 @@
   #l_msg .left_label.inl_bl:after {
     content: var(--messenger-label);
     font-size: 12.5px;
+  }
+  [dir] body.new_header_design .left_count_wrap {
+    color: var(--counter-fg);
+    background-color: var(--counter-bg); 
   }
 }
