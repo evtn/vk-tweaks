@@ -1,0 +1,20 @@
+/* ==UserStyle==
+@name           VK Tweaks Goroshkin Edition
+@namespace      qevitta
+@version        0.1.0
+@description    VK Tweaks Goroshkin Edition
+@author         vk.com/qevitta
+@homepageURL    http://github.com/evtn/vk-tweaks
+@updateURL      https://raw.githubusercontent.com/evtn/vk-tweaks/lord/vk-goroshkin.user.css
+==/UserStyle== */
+
+@-moz-document domain("vk.com") {
+  .im-mess-stack[data-peer="211495738"] a.im-mess-stack--lnk {
+    font-size: 0;
+  }
+  .im-mess-stack[data-peer="211495738"] a.im-mess-stack--lnk::after {
+    content: "Егор Кукурузкин";
+    font-size: 12.5px;
+    float: left;
+  }
+}

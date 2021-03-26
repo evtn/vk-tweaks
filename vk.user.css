@@ -13,6 +13,7 @@
 @var text messenger-label "Текст пункта 'Мессенджер' (кавычки убирать не надо)" '"Мессенджер"'
 @var select counter-bg "Фон счетчиков в левом меню" {"Стандартный*": "var(--counter_secondary_background)", "Прозрачный": "transparent", "Яркий": "var(--accent)"}
 @var select counter-fg "Текст счетчиков в левом меню" {"Стандартный*": "var(--white)", "Белый": "white", "Яркий": "var(--accent)"}
+@var select blue_400 "Основной цвет" {"Ярко-синий*": }
 ==/UserStyle== */
 
 @-moz-document domain("vk.com") {
@@ -73,8 +74,14 @@
     content: var(--messenger-label);
     font-size: 12.5px;
   }
-  [dir] body.new_header_design .left_count_wrap {
+  [dir] body.new_header_design .left_count_wrap,
+  [dir] .left_count_wrap.left_count_wrap_hovered:hover {
     color: var(--counter-fg);
-    background-color: var(--counter-bg); 
+    background-color: var(--counter-bg);
+    text-decoration: none;
+  }
+  [dir] .TopHomeLink--logoWithText,
+  [dir="ltr"] .LeftMenu__icon {
+    filter: saturate(0.5);
   }
 }
