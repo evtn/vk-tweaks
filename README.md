@@ -24,8 +24,9 @@
     - [Firefox](https://addons.mozilla.org/firefox/addon/styl-us/)
     - [Chrome/Chromium](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
     - [Opera](https://addons.opera.com/extensions/details/stylus/)
-2.1 Если вам нужны tweaks, перейти по [ссылке](https://raw.githubusercontent.com/evtn/vk-tweaks/lord/vk.user.css)
-2.2 Если вам нужна темная тема, перейти по [ссылке](https://raw.githubusercontent.com/evtn/vk-tweaks/lord/dark.user.css)
+2.
+    1. Если вам нужны tweaks, перейти по [ссылке](https://raw.githubusercontent.com/evtn/vk-tweaks/lord/vk.user.css)
+    2. Если вам нужна темная тема, перейти по [ссылке](https://raw.githubusercontent.com/evtn/vk-tweaks/lord/dark.user.css)
 3. Нажать "Установить стиль"
 
 ## Неидеальный вариант
